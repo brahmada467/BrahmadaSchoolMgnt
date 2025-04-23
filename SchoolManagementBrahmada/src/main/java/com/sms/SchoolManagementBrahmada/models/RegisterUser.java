@@ -15,7 +15,7 @@ public class RegisterUser {
 	@Email
 	private String email;
 	
-	@Size(max = 10, message = "Phone number must not exceed 10 digits")
+	@Size(min=10,max = 10, message = "Phone number must not exceed 10 digits")
 	private String phone;
 	
 	@Size(min =6, message = "Minimum Password length is 6 characters")
